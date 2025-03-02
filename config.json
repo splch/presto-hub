@@ -1,0 +1,121 @@
+{
+  "wifi": {
+    "enable": true,
+    "ssid": "YourNetworkSSID",
+    "password": "YourNetworkPass"
+  },
+  "weather": {
+    "enable": true,
+    "city": "London",
+    "api_url": "http://wttr.in?format=j1"
+  },
+  "stocks": {
+    "enable": true,
+    "tickers": ["AAPL", "GOOG"],
+    "api_key": "YourAlphaVantageKey"
+  },
+  "crypto": {
+    "enable": true,
+    "tickers": ["bitcoin", "ethereum"],
+    "api_url": "https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd"
+  },
+  "tou_d_prime": {
+    "summer_months": [6, 7, 8, 9],
+    "weekend_days": [5, 6],
+    "summer": {
+      "weekday": [
+        {
+          "start": 0,
+          "end": 4,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        },
+        {
+          "start": 4,
+          "end": 16,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "rate": 56,
+          "recommendation": "Avoid (High cost)",
+          "label": "On-Peak"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        }
+      ],
+      "weekend": [
+        {
+          "start": 0,
+          "end": 4,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        },
+        {
+          "start": 4,
+          "end": 16,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "rate": 38,
+          "recommendation": "Minimize (Mod.)",
+          "label": "Mid-Peak"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "rate": 26,
+          "recommendation": "Use (Low cost)",
+          "label": "Off-Peak"
+        }
+      ]
+    },
+    "winter": [
+      {
+        "start": 0,
+        "end": 8,
+        "rate": 24,
+        "recommendation": "Use (Low cost)",
+        "label": "Off-Peak"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "rate": 24,
+        "recommendation": "Use (Lowest cost)",
+        "label": "Super Off-Peak"
+      },
+      {
+        "start": 16,
+        "end": 21,
+        "rate": 53,
+        "recommendation": "Avoid (High cost)",
+        "label": "Mid-Peak"
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "rate": 24,
+        "recommendation": "Use (Low cost)",
+        "label": "Off-Peak"
+      }
+    ]
+  },
+  "main_loop": {
+    "update_interval": 10
+  }
+}
